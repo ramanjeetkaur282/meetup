@@ -1,11 +1,12 @@
 import classes from './MeetupDetails.module.css';
 
-function MeetupDetails(props){
+function MeetupDetail(props){
    return (
      <section className={classes.details}>
     <img 
-    src={props.image}
-    alt={props.title}/>
+     src={props.image}
+    alt={props.title}
+    />
     <h1>{props.title}</h1>
     <address>{props.address}</address>
     <p>{props.description}</p>
@@ -13,4 +14,4 @@ function MeetupDetails(props){
    )
 }
 
-export default MeetupDetails;
+export default MeetupDetail;
