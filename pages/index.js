@@ -20,7 +20,7 @@ function HomePage(props){
 
 export async function getStaticProps(){
 
-    const client = await MongoClient.connect('mongodb+srv://ramanjeetkaur282:Eh4gkYv9ge6NehKo@nextjs.ljldfad.mongodb.net/meetups?retryWrites=true&w=majority');
+    const client = await MongoClient.connect('mongodb+srv://ramanjeetkaur282:Sandy123@nextjs.ljldfad.mongodb.net/meetups?retryWrites=true&w=majority');
     const db=client.db();
 
     const meetupsCollection=db.collection('meetups');
